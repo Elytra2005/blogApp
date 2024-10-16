@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.hold-body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.hold-body-margin {
+    margin-top: 20px;
+}
+
+.sectionone {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.sectiontwo {
+    margin-top: 20px;
+}
+
+.sectionthree {
+    margin-top: 20px;
+    text-align: center;
+}
+
+fieldset {
+   border: none;
+   outline: none;
+}
+
+.hold-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hold-entries .title .special {
+    width: 100%;
+}
+
+
+.hold-entry {
+    display: flex;
+    gap: 20px;
+}
+
+.hold-entry input {
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 1rem;
+    outline: none  !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1rem;
+    outline: none  !important;
+}
+
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* js elements */
+
+#post-list {
+   margin-top: 20px;
+}
+
+#post-list .post-list {
+   list-style: none;    
+}
+
+.blog-title {
+    font-size: 30px;
+    text-align: center;
+}
+.blog-inputs {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button-div {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
