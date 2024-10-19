@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
-from app import post
+from app import handle_post
 
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 
 def work():
-    post()
-    return render_template("index.html")
+   handle_post() 
+   return render_template("index.html")
 
     
     
